@@ -6,6 +6,8 @@
 <title>FINANEX – L'Innovation Numérique au Service de Votre Avenir</title>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fraunces:wght@700;800;900&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="icon" type="image/jpeg" href="image/logofinanex.jpg">
+<link rel="apple-touch-icon" href="image/logofinanex.jpg">
 <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -362,7 +364,6 @@
   </div>
 </section>
 
-
 <!-- ═══ FOOTER ═══ -->
 <footer>
   <div class="ft-grid">
@@ -424,7 +425,7 @@
           </a>
         </li>
         <li>
-          <a href="https://wa.me/2290146258392" target="_blank">
+          <a href="https://wa.me/22946258392" target="_blank">
             <i class="fab fa-whatsapp"></i>
             <span>WhatsApp</span>
           </a>
@@ -438,8 +439,6 @@
     <span>Parakou, Bénin</span>
   </div>
 </footer>
-
-<script src="js/main.js"></script>
 
 <div class="wa-widget">
   <div class="wa-chatbox" id="waChatbox">
@@ -496,7 +495,6 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', function(){
-
   const input = document.getElementById('waInput');
   const emojiBtn = document.getElementById('waEmojiBtn');
   const emojiPicker = document.getElementById('emojiPicker');
@@ -507,25 +505,21 @@ document.addEventListener('DOMContentLoaded', function(){
     emojiBtn.onclick = () => {
       emojiPicker.style.display = emojiPicker.style.display === 'none' ? 'block' : 'none';
     };
-
     emojiPicker.addEventListener('emoji-click', event => {
       input.value += event.detail.unicode;
       input.focus();
     });
-
     document.addEventListener('click', e => {
       if (!emojiBtn.contains(e.target) && !emojiPicker.contains(e.target)) {
         emojiPicker.style.display = 'none';
       }
     });
   }
-
   // Bouton envoyer qui devient vert
   if(sendBtn && input){
     input.addEventListener('input', () => {
       sendBtn.classList.toggle('active', input.value.trim().length > 0);
     });
-
     sendBtn.onclick = () => {
       if(input.value.trim().length > 0){
         console.log("Message envoyé:", input.value);
@@ -535,7 +529,6 @@ document.addEventListener('DOMContentLoaded', function(){
       }
     };
   }
-
 });
 </script>
 
@@ -550,6 +543,8 @@ const observer = new MutationObserver(() => {
 
 observer.observe(document.body, { childList: true, subtree: true });
 </script>
+
+<script src="js/main.js"></script>
 
 </body>
 </html>

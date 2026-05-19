@@ -1231,3 +1231,5 @@ section:nth-child(even){background: var(--light);}
   box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4) !important;
   background: #20ba5a !important;
 }
+
+.wa-body{background-image: none !important; background-color: #ece5dd !important;}

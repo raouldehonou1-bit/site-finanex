@@ -201,7 +201,7 @@ document.addEventListener('DOMContentLoaded', function(){
   sendBtn.onclick = () => {
     const msg = input.value.trim();
     if(!msg) return;
-    const phone = "2290159051823"; 
+    const phone = "2290146258392";
     const url = `https://wa.me/${phone}?text=${encodeURIComponent(msg)}`;
     window.open(url, '_blank');
     input.value = '';
